@@ -1,0 +1,460 @@
+CRITICAL - 2023-12-20 05:53:06 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 231.
+ 1 SYSTEMPATH\CodeIgniter.php(231): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(189): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(71): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-20 19:35:16 --> Invalid file: home/daftar-laundry.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/daftar-laundry.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 3 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 19:43:29 --> Undefined index: KATEGORI
+in APPPATH\Views\home\daftar-laundry.php on line 132.
+ 1 APPPATH\Views\home\daftar-laundry.php(132): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: KATEGORI', 'APPPATH\\Views\\home\\daftar-laundry.php', 132, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\daftar-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 19:51:00 --> Undefined index: DURASI
+in APPPATH\Views\home\daftar-laundry.php on line 128.
+ 1 APPPATH\Views\home\daftar-laundry.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: DURASI', 'APPPATH\\Views\\home\\daftar-laundry.php', 128, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\daftar-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 19:55:45 --> Undefined index: NAMA_SERVICE
+in APPPATH\Views\home\detail-laundry.php on line 92.
+ 1 APPPATH\Views\home\detail-laundry.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NAMA_SERVICE', 'APPPATH\\Views\\home\\detail-laundry.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\detail-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/detail-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(94): view('home/detail-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->detailLaundry('LRY-DRLLERVWYQ3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 19:55:55 --> Undefined index: NAMA_SERVICE
+in APPPATH\Views\home\detail-laundry.php on line 92.
+ 1 APPPATH\Views\home\detail-laundry.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NAMA_SERVICE', 'APPPATH\\Views\\home\\detail-laundry.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\detail-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/detail-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(94): view('home/detail-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->detailLaundry('LRY-DRLLERVWYQ3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 19:59:16 --> Undefined index: ID_CLEANING_SERVICE
+in APPPATH\Views\home\detail-laundry.php on line 156.
+ 1 APPPATH\Views\home\detail-laundry.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_CLEANING_SERVICE', 'APPPATH\\Views\\home\\detail-laundry.php', 156, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\detail-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/detail-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(94): view('home/detail-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->detailLaundry('LRY-DRLLERVWYQ3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:07:34 --> Undefined index: NAMA_SERVICE
+in APPPATH\Views\home\transaksi-laundry.php on line 56.
+ 1 APPPATH\Views\home\transaksi-laundry.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NAMA_SERVICE', 'APPPATH\\Views\\home\\transaksi-laundry.php', 56, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserFormTransaksi.php(61): view('home/transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserFormTransaksi->indexFormLaundry('LRY-DRLLERVWYQ3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserFormTransaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:15:02 --> syntax error, unexpected '<'
+in APPPATH\Views\home\daftar-laundry.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 3 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:15:26 --> syntax error, unexpected '<'
+in APPPATH\Views\home\daftar-laundry.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 3 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:19:26 --> syntax error, unexpected 'bi' (T_STRING), expecting ';' or ','
+in APPPATH\Views\home\daftar-laundry.php on line 127.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 3 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:21:26 --> Array to string conversion
+in APPPATH\Views\home\daftar-laundry.php on line 127.
+ 1 APPPATH\Views\home\daftar-laundry.php(127): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\home\\daftar-laundry.php', 127, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\daftar-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/daftar-laundry', [], true)
+ 5 APPPATH\Controllers\Home.php(54): view('home/daftar-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->indexDaftarLaundry()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:23:56 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Controllers\UserTransaksiCS.php on line 61.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Controllers\\UserTransaksiCS.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:28:28 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Controllers\UserTransaksiCS.php on line 61.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Controllers\\UserTransaksiCS.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:29:37 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Controllers\UserTransaksiCS.php on line 61.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Controllers\\UserTransaksiCS.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:29:54 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Controllers\UserTransaksiCS.php on line 61.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Controllers\\UserTransaksiCS.php', 61, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->store()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:30:46 --> Invalid file: home/user-detail-transaksi-laundry.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/user-detail-transaksi-laundry.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 3 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-OIS4CXBRFYI8VPTM')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:32:22 --> Undefined variable: dataCS
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 27.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataCS', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-OIS4CXBRFYI8VPTM')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:34:28 --> Undefined variable: dataCS
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 27.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataCS', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:37:08 --> Undefined variable: dataCS
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 27.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dataCS', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 27, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:37:43 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 31.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 31, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:38:34 --> Undefined index: TANGGAL_BOOKING
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 65.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: TANGGAL_BOOKING', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(39): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:40:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserTransaksiCS.php on line 33.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserTransaksiCS.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:40:53 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserTransaksiCS.php on line 33.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserTransaksiCS.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:48:54 --> Undefined index: NAMA_SERVICE
+in APPPATH\Views\home\user-transaksi-laundry.php on line 32.
+ 1 APPPATH\Views\home\user-transaksi-laundry.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NAMA_SERVICE', 'APPPATH\\Views\\home\\user-transaksi-laundry.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(27): view('home/user-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 20:49:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\UserTransaksiCS.php on line 33.
+ 1 APPPATH\Controllers\UserTransaksiCS.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\UserTransaksiCS.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiCS->indexDetailTransaksi('TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiCS))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 21:27:16 --> Undefined index: NAMA_SERVICE
+in APPPATH\Views\admin\kelola-laundry.php on line 33.
+ 1 APPPATH\Views\admin\kelola-laundry.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: NAMA_SERVICE', 'APPPATH\\Views\\admin\\kelola-laundry.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\kelola-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/kelola-laundry', [], true)
+ 5 APPPATH\Controllers\AdminKelolaLaundry.php(27): view('admin/kelola-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminKelolaLaundry->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKelolaLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 21:27:39 --> Invalid file: admin/edit/kelola-laundry.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit/kelola-laundry.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/edit/kelola-laundry', [], true)
+ 3 APPPATH\Controllers\AdminKelolaLaundry.php(59): view('admin/edit/kelola-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminKelolaLaundry->editIndex('LRY-DRLLERVWYQ3')
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKelolaLaundry))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 21:28:31 --> Undefined index: ID_CLEANING_SERVICE
+in APPPATH\Views\admin\edit\kelola-laundry.php on line 9.
+ 1 APPPATH\Views\admin\edit\kelola-laundry.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ID_CLEANING_SERVICE', 'APPPATH\\Views\\admin\\edit\\kelola-laundry.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\edit\\kelola-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/edit/kelola-laundry', [], true)
+ 5 APPPATH\Controllers\AdminKelolaLaundry.php(59): view('admin/edit/kelola-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminKelolaLaundry->editIndex('LRY-DRLLERVWYQ3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminKelolaLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 21:36:02 --> Invalid file: admin/transaksi-laundry.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi-laundry.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/transaksi-laundry', [], true)
+ 3 APPPATH\Controllers\AdminTransaksiLaundry.php(27): view('admin/transaksi-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminTransaksiLaundry->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminTransaksiLaundry))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 21:38:44 --> Invalid file: admin/transaksi-laundry.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/transaksi-laundry.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('admin/transaksi-laundry', [], true)
+ 3 APPPATH\Controllers\AdminTransaksiLaundry.php(27): view('admin/transaksi-laundry', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\AdminTransaksiLaundry->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminTransaksiLaundry))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 22:53:08 --> Undefined variable: durianjsurl
+in APPPATH\Views\home\transaksi-laundry.php on line 152.
+ 1 APPPATH\Views\home\transaksi-laundry.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: durianjsurl', 'APPPATH\\Views\\home\\transaksi-laundry.php', 152, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserFormTransaksi.php(63): view('home/transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserFormTransaksi->indexFormLaundry('LRY-X5UDSCNOAYT')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserFormTransaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:02:34 --> Undefined variable: durianjsurl
+in APPPATH\Views\home\user-detail-transaksi-laundry.php on line 206.
+ 1 APPPATH\Views\home\user-detail-transaksi-laundry.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: durianjsurl', 'APPPATH\\Views\\home\\user-detail-transaksi-laundry.php', 206, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home\\user-detail-transaksi-laundry.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('home/user-detail-transaksi-laundry', [], true)
+ 5 APPPATH\Controllers\UserTransaksiLaundry.php(41): view('home/user-detail-transaksi-laundry', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UserTransaksiLaundry->indexDetailTransaksi('TRX-B8FOUXA2PMTX1KJD')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserTransaksiLaundry))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:50:14 --> syntax error, unexpected '$tablename' (T_VARIABLE)
+in APPPATH\Controllers\PaymentGateway.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:50:22 --> syntax error, unexpected '$tablename' (T_VARIABLE)
+in APPPATH\Controllers\PaymentGateway.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/layananz/')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/layananz/')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/layananz/')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:50:26 --> syntax error, unexpected '$tablename' (T_VARIABLE)
+in APPPATH\Controllers\PaymentGateway.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/layananz/')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/layananz/')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/layananz/')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:50:29 --> syntax error, unexpected '$tablename' (T_VARIABLE)
+in APPPATH\Controllers\PaymentGateway.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:50:39 --> syntax error, unexpected '$tablename' (T_VARIABLE)
+in APPPATH\Controllers\PaymentGateway.php on line 72.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/layananz/ss')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:51:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\CrudModel.php on line 213.
+ 1 APPPATH\Controllers\PaymentGateway.php(97): App\Models\CrudModel->cektransaksi('transaksi_laundry', 'ss')
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'ss')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-20 23:54:24 --> Unknown column 'ID_TRANSAKSIx' in 'where clause'
+CRITICAL - 2023-12-20 23:54:24 --> Unknown column 'ID_TRANSAKSIx' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `transaksi_laundry`
+WHERE `ID_TRANSAKSIx` = \'LRY-X5UDSCNOAYT\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `transaksi_laundry`
+WHERE `ID_TRANSAKSIx` = \'LRY-X5UDSCNOAYT\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `transaksi_laundry`
+WHERE `ID_TRANSAKSIx` = \'LRY-X5UDSCNOAYT\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `transaksi_laundry`
+WHERE `ID_TRANSAKSIx` = :ID_TRANSAKSIx:', [...], false)
+ 5 APPPATH\Models\CrudModel.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PaymentGateway.php(97): App\Models\CrudModel->cektransaksi('transaksi_laundry', 'LRY-X5UDSCNOAYT')
+ 7 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'LRY-X5UDSCNOAYT')
+ 8 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:57:08 --> Undefined property: App\Controllers\PaymentGateway::$k_data
+in APPPATH\Controllers\PaymentGateway.php on line 114.
+ 1 APPPATH\Controllers\PaymentGateway.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$k_data', 'APPPATH\\Controllers\\PaymentGateway.php', 114, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:57:28 --> Undefined offset: 0
+in APPPATH\Controllers\PaymentGateway.php on line 117.
+ 1 APPPATH\Controllers\PaymentGateway.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\PaymentGateway.php', 117, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:58:44 --> Undefined offset: 0
+in APPPATH\Controllers\PaymentGateway.php on line 119.
+ 1 APPPATH\Controllers\PaymentGateway.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\PaymentGateway.php', 119, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:59:05 --> Undefined offset: 0
+in APPPATH\Controllers\PaymentGateway.php on line 120.
+ 1 APPPATH\Controllers\PaymentGateway.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\PaymentGateway.php', 120, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-20 23:59:23 --> Undefined offset: 0
+in APPPATH\Controllers\PaymentGateway.php on line 120.
+ 1 APPPATH\Controllers\PaymentGateway.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\PaymentGateway.php', 120, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

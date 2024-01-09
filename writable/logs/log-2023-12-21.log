@@ -1,0 +1,974 @@
+CRITICAL - 2023-12-21 00:00:09 --> Undefined offset: 0
+in APPPATH\Controllers\PaymentGateway.php on line 121.
+ 1 APPPATH\Controllers\PaymentGateway.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH\\Controllers\\PaymentGateway.php', 121, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-21 00:06:27 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Controllers\PaymentGateway.php on line 153.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-21 00:06:33 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Controllers\PaymentGateway.php on line 153.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(771): CodeIgniter\Router\Router->handle('PaymentGateway/checkoutDurianPay/laundry/TRX-WPK3SRQ7QWJBRCOI')
+ 4 SYSTEMPATH\CodeIgniter.php(415): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-21 00:11:20 --> Undefined offset: 1
+in APPPATH\Controllers\PaymentGateway.php on line 161.
+ 1 APPPATH\Controllers\PaymentGateway.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\PaymentGateway.php', 161, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2023-12-21 00:32:36 --> Illegal string offset 'data'
+in APPPATH\Controllers\PaymentGateway.php on line 162.
+ 1 APPPATH\Controllers\PaymentGateway.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'data\'', 'APPPATH\\Controllers\\PaymentGateway.php', 162, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('laundry', 'TRX-WPK3SRQ7QWJBRCOI')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 02:17:50 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2023-12-21 02:17:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:19:06 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2023-12-21 02:19:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 416.
+ 1 SYSTEMPATH/Database/BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:19:34 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+CRITICAL - 2023-12-21 02:19:34 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:23:11 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+CRITICAL - 2023-12-21 02:23:11 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:28:51 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+CRITICAL - 2023-12-21 02:28:51 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:29:08 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+CRITICAL - 2023-12-21 02:29:08 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:29:42 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+CRITICAL - 2023-12-21 02:29:42 --> Table 'mysrrgya_komaha.KOST' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = \'YA\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `KOST`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(9): App\Models\CrudModel->getDataWhereArray('KOST', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:38:51 --> Table 'mysrrgya_komaha.USER' doesn't exist
+CRITICAL - 2023-12-21 02:38:51 --> Table 'mysrrgya_komaha.USER' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `USER`
+WHERE `USERNAME` = \'ADMIN\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `USER`
+WHERE `USERNAME` = \'ADMIN\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `USER`
+WHERE `USERNAME` = \'ADMIN\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `USER`
+WHERE `USERNAME` = :USERNAME:', [...], false)
+ 5 APPPATH/Models/CrudModel.php(152): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminAuth.php(15): App\Models\CrudModel->getRowDataArray('USER', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\AdminAuth->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:40:25 --> Table 'mysrrgya_komaha.TRANSAKSI_LAUNDRY' doesn't exist
+CRITICAL - 2023-12-21 02:40:25 --> Table 'mysrrgya_komaha.TRANSAKSI_LAUNDRY' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 4 APPPATH/Models/CrudModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 5 APPPATH/Models/CrudModel.php(39): App\Models\CrudModel->getQuery('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 6 APPPATH/Controllers/AdminTransaksiLaundry.php(23): App\Models\CrudModel->queryArray('SELECT * FROM TRANSAKSI_LAUNDRY AS A LEFT JOIN LAUNDRY AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\AdminTransaksiLaundry->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminTransaksiLaundry))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 02:46:00 --> Table 'mysrrgya_komaha.USER' doesn't exist
+CRITICAL - 2023-12-21 02:46:00 --> Table 'mysrrgya_komaha.USER' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 4 APPPATH/Models/CrudModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 5 APPPATH/Models/CrudModel.php(39): App\Models\CrudModel->getQuery('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 6 APPPATH/Controllers/AdminTransaksiLaundry.php(23): App\Models\CrudModel->queryArray('SELECT * FROM transaksi_laundry AS A LEFT JOIN laundry AS B ON(A.ID_LAUNDRY = B.ID_LAUNDRY) LEFT JOIN USER AS C ON(A.ID_USER = C.ID_USER)')
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\AdminTransaksiLaundry->index()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminTransaksiLaundry))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:49:28 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:51:29 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:51:47 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:52:06 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:52:23 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:57:07 --> Undefined variable: defaultimage
+in APPPATH/Controllers/PaymentGateway.php on line 122.
+ 1 APPPATH/Controllers/PaymentGateway.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: defaultimage', 'APPPATH/Controllers/PaymentGateway.php', 122, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->checkoutDurianPay('kost', 'TRX-RAY25UXFYNVUISWS')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:58:32 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:59:14 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:59:16 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:59:17 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 02:59:58 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:00:13 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:00:16 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:01:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 03:05:58 --> Unknown column '_gid' in 'field list'
+CRITICAL - 2023-12-21 03:05:58 --> Unknown column '_gid' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-KJPRASBD\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-KJPRASBD\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-KJPRASBD\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :_gid:, :csrf_cookie_name:, :_ga:, :ci_session:, :_ga_Y5DFN9DCWC:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:09 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:11 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:12 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:06:12 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 03:08:29 --> Unknown column '_gid' in 'field list'
+CRITICAL - 2023-12-21 03:08:29 --> Unknown column '_gid' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-2LHGTPZ8\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-2LHGTPZ8\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-2LHGTPZ8\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :_gid:, :csrf_cookie_name:, :_ga:, :ci_session:, :_ga_Y5DFN9DCWC:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 03:10:20 --> Unknown column '_gid' in 'field list'
+CRITICAL - 2023-12-21 03:10:20 --> Unknown column '_gid' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-7OUW8B3E\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-7OUW8B3E\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'wer\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'b5a0e60b569b15897096ca079e65a8c0af23259f\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'U-7OUW8B3E\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `ci_session`, `_ga_Y5DFN9DCWC`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :_gid:, :csrf_cookie_name:, :_ga:, :ci_session:, :_ga_Y5DFN9DCWC:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:11:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 03:14:18 --> Unknown column '_gid' in 'field list'
+CRITICAL - 2023-12-21 03:14:18 --> Unknown column '_gid' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'e5acfada3bbaa66cec78fafa79f3efc4ce0bf63b\', \'U-DL8PNHFS\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'e5acfada3bbaa66cec78fafa79f3efc4ce0bf63b\', \'U-DL8PNHFS\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'e5acfada3bbaa66cec78fafa79f3efc4ce0bf63b\', \'U-DL8PNHFS\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :_gid:, :csrf_cookie_name:, :_ga:, :_ga_Y5DFN9DCWC:, :ci_session:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:10 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:10 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:11 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:16:13 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 03:17:01 --> Unknown column '_gid' in 'field list'
+CRITICAL - 2023-12-21 03:17:01 --> Unknown column '_gid' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'70b621de542b029371a757308b39f5eddceaec95\', \'U-PIGB6QTM\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'70b621de542b029371a757308b39f5eddceaec95\', \'U-PIGB6QTM\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (\'DARKWIRELESS\', \'admin@ngx.my.id\', \'NGX\', \'085156858101\', \'LAKI-LAKI\', \'asdasdasd\', \'Jl. Pisang Agung III No.4, Pisang Candi, Sukun\', \'GA1.3.1590487201.1703147931\', \'1837331809f75baa90440a91d10151d7\', \'GA1.1.152808341.1703147931\', \'GS1.1.1703147930.1.1.1703149485.0.0.0\', \'70b621de542b029371a757308b39f5eddceaec95\', \'U-PIGB6QTM\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `_gid`, `csrf_cookie_name`, `_ga`, `_ga_Y5DFN9DCWC`, `ci_session`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :_gid:, :csrf_cookie_name:, :_ga:, :_ga_Y5DFN9DCWC:, :ci_session:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:26:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:09 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:10 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:11 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 03:31:12 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:01:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:09 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:10 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:11 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:06:12 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:36:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:09 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:10 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:11 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:41:12 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 12:16:25 --> Unknown column 'ci_session' in 'field list'
+CRITICAL - 2023-12-21 12:16:25 --> Unknown column 'ci_session' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-T3YJ750S\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-T3YJ750S\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-T3YJ750S\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :ci_session:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 12:16:51 --> Unknown column 'ci_session' in 'field list'
+CRITICAL - 2023-12-21 12:16:51 --> Unknown column 'ci_session' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-XWORMZO0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-XWORMZO0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'ADYS\', \'adysayu@gmail.com\', \'ADYS AYU\', \'24222\', \'PEREMPUAN\', \'adys\', \'jl gn jati\', \'fd0faec6623a045581b5b2b854c0a6cfaf2bf47b\', \'U-XWORMZO0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :ci_session:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 12:27:08 --> Unknown column 'ci_session' in 'field list'
+CRITICAL - 2023-12-21 12:27:08 --> Unknown column 'ci_session' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'GLADIS\', \'adys19@gmail.com\', \'ADYS\', \'0812\', \'PEREMPUAN\', \'adys19\', \'hiedd\', \'64b7c58923087e112fd1d66b5a34febe51dabe90\', \'U-ZNDZ0XGV\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'GLADIS\', \'adys19@gmail.com\', \'ADYS\', \'0812\', \'PEREMPUAN\', \'adys19\', \'hiedd\', \'64b7c58923087e112fd1d66b5a34febe51dabe90\', \'U-ZNDZ0XGV\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (\'GLADIS\', \'adys19@gmail.com\', \'ADYS\', \'0812\', \'PEREMPUAN\', \'adys19\', \'hiedd\', \'64b7c58923087e112fd1d66b5a34febe51dabe90\', \'U-ZNDZ0XGV\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`USERNAME`, `EMAIL`, `NAMA_LENGKAP`, `TELEPON`, `JENIS_KELAMIN`, `PASSWORD`, `ALAMAT`, `ci_session`, `ID_USER`) VALUES (:USERNAME:, :EMAIL:, :NAMA_LENGKAP:, :TELEPON:, :JENIS_KELAMIN:, :PASSWORD:, :ALAMAT:, :ci_session:, :ID_USER:)', [...], false)
+ 5 APPPATH/Models/CrudModel.php(163): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/UserAuth.php(23): App\Models\CrudModel->insertData('user', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\UserAuth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAuth))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:33:26 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:36:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:46:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 13:01:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 14:36:07 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 18:11:08 --> Undefined property: App\Controllers\PaymentGateway::$config
+in APPPATH/Controllers/PaymentGateway.php on line 60.
+ 1 APPPATH/Controllers/PaymentGateway.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\PaymentGateway::$config', 'APPPATH/Controllers/PaymentGateway.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\PaymentGateway->hookDurianPay()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaymentGateway))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 20:54:25 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 20:54:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 21:15:19 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 21:15:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:23:43 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:23:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:26:31 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:26:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:26:34 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:26:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:28:00 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:28:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:29:02 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:29:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:30:51 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:30:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:31:06 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:31:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:32:38 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:32:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:39:04 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:39:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:39:08 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:39:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:41:18 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:41:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:41:51 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:41:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:43:34 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:43:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:47:55 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:47:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:50:13 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:50:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2023-12-21 22:51:33 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-12-21 22:51:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kost`
+WHERE `REKOMENDASI` = :REKOMENDASI:', [...], false)
+ 3 APPPATH\Models\CrudModel.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(9): App\Models\CrudModel->getDataWhereArray('kost', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
